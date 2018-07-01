@@ -50,4 +50,4 @@ library(plyr)
 tidy_data <- ddply(act2, c('subjectid', 'activity'), numcolwise(mean))
 
 #exporting the file
-write.table(tidy_data, "tidy.txt", col.names = TRUE)
+write.table(tidy_data, "tidy.txt", row.names = FALSE)
